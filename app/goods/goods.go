@@ -22,6 +22,7 @@ var GoodsCheckPrice validator.Func = func(fl validator.FieldLevel) bool {
 	fieldValue := fl.Field().Interface().(int) // 根据验证的字段进行定义
 	fmt.Println("field : ", fieldValue)
 	// todo 做验证逻辑
+
 	return true
 }
 
