@@ -28,6 +28,5 @@ func DB() *gorm.DB {
 		},
 	})
 	fmt.Println("err ", err)
-	//fmt.Println("AppConfig ", config.AppConfig)
 	return db
 }
