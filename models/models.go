@@ -17,7 +17,7 @@ func init() {
 	password := config.GetConfig("mysql", "password")
 	database := config.GetConfig("mysql", "database")
 	charset := config.GetConfig("mysql", "charset")
-	dns = fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=%s", user, password, host, port, database, charset)
+	dns = fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=%s", user, password, host, port, database, charset)
 }
 
 func DB() *gorm.DB {
